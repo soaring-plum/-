@@ -6,7 +6,7 @@ class zafu_infos:
     def __init__(self):#定义初始化函数
         url = "http://10.152.250.2/srun_portal_pc?ac_id=1&theme=zafu"#网络登录的地址
         self.url = url
-        self.browser = webdriver.Chrome('C:\Program Files\Python39\chromedriver.exe')#加入浏览器的驱动如果是google或火狐要改
+        self.browser = webdriver.Chrome('C:\Program Files\Python39\chromedriver.exe')#加入浏览器的驱动如果是google或火狐要改，python路径不同也要改
 
     def login(self):#登录函数
         self.browser.get(self.url)#浏览器驱动打开网站
